@@ -1,6 +1,5 @@
 module "moduledemo-website" {
-  source  = "app.terraform.io/rs-tfc-yt/moduledemo-website/azure"
-  version = "~> 0.0.1"
+  source  = "app.terraform.io/gauth/azure-demo-website/module"
   rg_location = var.locationRg
   loc = var.locationName
   instance_type = var.instance
