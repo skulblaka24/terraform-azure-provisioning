@@ -1,3 +1,17 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "=2.76.0"
+    }
+  }
+}
+
+# Configure the Microsoft Azure Provider
+provider "azurerm" {
+  features {}
+}
+
 module "moduledemo-website" {
   source  = "app.terraform.io/gauth/azure-demo-website/module"
   rg_location = var.locationRg
