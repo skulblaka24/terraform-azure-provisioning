@@ -74,7 +74,8 @@ No Terraform variables, environment !
 ```
 Those should be tagged as Sensitive !
 
-Variable required:
+Variables required:
+-------------------
 ```
 linux_password = ""
 ```
